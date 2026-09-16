@@ -3,171 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admission</title>
+    <title>Admission - Golden Child Complex School</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<script>tailwind.config={theme:{extend:{colors:{primary:'#15B8A6',secondary:'#0F766E'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
-<link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#15B8A6', secondary: '#0F766E' },
+                    borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="bg-[#fff8e6]">
     
     <!-- Admission Process -->
     <section id="admissions" class="py-20 bg-[#fffbf0]">
-    <div class="container mx-auto px-4 relative z-10">
-    <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-gray-800 mb-2">Admission Process</h2>
-    <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
-    <p class="text-gray-700 max-w-2xl mx-auto">Join our community of learners with a simple application process.</p>
-    </div>
-    <div class="relative mb-16">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div class="relative step-connector">
-    <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">1</div>
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">Application</h3>
-    <p class="text-gray-700">Complete and submit the application form online or in person at our administrative office.</p>
-    </div>
-    </div>
-    <div class="relative step-connector">
-    <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">2</div>
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">Assessment</h3>
-    <p class="text-gray-700">Schedule an assessment test and interview to determine the appropriate grade level placement.</p>
-    </div>
-    </div>
-    <div class="relative step-connector">
-    <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">3</div>
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">Acceptance</h3>
-    <p class="text-gray-700">Receive admission decision within two weeks of completing the assessment process.</p>
-    </div>
-    </div>
-    <div class="relative step-connector">
-    <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">4</div>
-    <h3 class="text-xl font-semibold text-gray-800 mb-3">Enrollment</h3>
-    <p class="text-gray-700">Complete registration by paying fees and submitting required documents to secure your child's place.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Required Documents</h3>
-    <ul class="space-y-3">
-    <li class="flex items-center">
-    <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
-    <i class="ri-checkbox-circle-line"></i>
-    </div>
-    <span class="text-gray-700">Completed application form</span>
-    </li>
-    <li class="flex items-center">
-    <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
-    <i class="ri-checkbox-circle-line"></i>
-    </div>
-    <span class="text-gray-700">Birth certificate (original and photocopy)</span>
-    </li>
-    <li class="flex items-center">
-    <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
-    <i class="ri-checkbox-circle-line"></i>
-    </div>
-    <span class="text-gray-700">Immunization records</span>
-    </li>
-    <li class="flex items-center">
-    <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
-    <i class="ri-checkbox-circle-line"></i>
-    </div>
-    <span class="text-gray-700">Recent passport-sized photographs (4)</span>
-    </li>
-    <li class="flex items-center">
-    <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
-    <i class="ri-checkbox-circle-line"></i>
-    </div>
-    <span class="text-gray-700">Previous school records (for transfers)</span>
-    </li>
-    <li class="flex items-center">
-    <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
-    <i class="ri-checkbox-circle-line"></i>
-    </div>
-    <span class="text-gray-700">Parent/guardian ID (original and photocopy)</span>
-    </li>
-    </ul>
-    <div class="mt-8">
-        <!-- This is the button used to download an application -->
-    
-    <button onclick="downloadForm()" class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center">
-    <div class="w-5 h-5 flex items-center justify-center mr-2">
-    <i class="ri-download-line"></i>
-    </div>
-    Download Application Form
-    </button>
-    </div>
-    </div>
-    <script>
-    function downloadForm() {
-      // Replace 'path/to/your/form.pdf' with the actual URL or path to your form file
-      var formUrl = 'path/to/your/form.pdf';
-    
-      // Create a temporary link element
-      var link = document.createElement('a');
-      link.href = formUrl;
-      link.download = 'form.pdf'; // You can change the default download name here
-    
-      // Programmatically click the link to trigger the download
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link); // Clean up the temporary link
-    }
-    </script>
-    <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Fee Structure (2024-2025)</h3>
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
-    <tr class="bg-gray-50">
-    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Level</th>
-    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Term Fee (GHS)</th>
-    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Annual Fee (GHS)</th>
-    </tr>
-    </thead>
-    <tbody class="divide-y divide-gray-100">
-    <tr>
-    <td class="px-4 py-3 text-gray-700">Creche</td>
-    <td class="px-4 py-3 text-gray-700">3,500</td>
-    <td class="px-4 py-3 text-gray-700">10,000</td>
-    </tr>
-    <tr>
-    <td class="px-4 py-3 text-gray-700">Kindergarten</td>
-    <td class="px-4 py-3 text-gray-700">4,000</td>
-    <td class="px-4 py-3 text-gray-700">11,500</td>
-    </tr>
-    <tr>
-    <td class="px-4 py-3 text-gray-700">Primary School</td>
-    <td class="px-4 py-3 text-gray-700">4,500</td>
-    <td class="px-4 py-3 text-gray-700">13,000</td>
-    </tr>
-    <tr>
-    <td class="px-4 py-3 text-gray-700">Junior High School</td>
-    <td class="px-4 py-3 text-gray-700">5,200</td>
-    <td class="px-4 py-3 text-gray-700">15,000</td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    <div class="mt-6">
-    <p class="text-gray-700 text-sm mb-2"><span class="font-semibold">Note:</span> Fees include tuition, books, and basic supplies. Additional costs may apply for uniforms, transportation, and extracurricular activities.</p>
-    <p class="text-gray-700 text-sm">Payment plans available. 5% discount for full annual payment.</p>
-    </div>
-    <div class="mt-6">
-    <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
-    View Complete Fee Structure
-    <div class="w-5 h-5 flex items-center justify-center ml-1">
-    <i class="ri-arrow-right-line"></i>
-    </div>
-    </button>
-    </div>
-    </div>
-    </div>
-    </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Admission Process</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Join our community of learners with a simple application process.</p>
+            </div>
+            
+            <div class="relative mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="relative step-connector">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
+                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">1</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Application</h3>
+                            <p class="text-gray-700">Complete and submit the application form online or in person at our administrative office.</p>
+                        </div>
+                    </div>
+                    <div class="relative step-connector">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
+                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">2</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Assessment</h3>
+                            <p class="text-gray-700">Schedule an assessment test and interview to determine the appropriate grade level placement.</p>
+                        </div>
+                    </div>
+                    <div class="relative step-connector">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
+                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">3</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Acceptance</h3>
+                            <p class="text-gray-700">Receive admission decision within two weeks of completing the assessment process.</p>
+                        </div>
+                    </div>
+                    <div class="relative step-connector">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
+                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">4</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Enrollment</h3>
+                            <p class="text-gray-700">Complete registration by paying fees and submitting required documents to secure your child's place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Required Documents & Download -->
+                <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Required Documents</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span class="text-gray-700">Completed application form</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span class="text-gray-700">Birth certificate (original and photocopy)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span class="text-gray-700">Immunization records</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span class="text-gray-700">Recent passport-sized photographs (4)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span class="text-gray-700">Previous school records (for transfers)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <span class="text-gray-700">Parent/guardian ID (original and photocopy)</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <button onclick="downloadForm()" class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-download-line"></i>
+                            </div>
+                            Download Application Form
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Fee Structure -->
+                <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Fee Structure (2024-2025)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="bg-gray-50">
+                                    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Level</th>
+                                    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Term Fee (GHS)</th>
+                                    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Annual Fee (GHS)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr>
+                                    <td class="px-4 py-3 text-gray-700">Creche</td>
+                                    <td class="px-4 py-3 text-gray-700">3,500</td>
+                                    <td class="px-4 py-3 text-gray-700">10,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 text-gray-700">Kindergarten</td>
+                                    <td class="px-4 py-3 text-gray-700">4,000</td>
+                                    <td class="px-4 py-3 text-gray-700">11,500</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 text-gray-700">Primary School</td>
+                                    <td class="px-4 py-3 text-gray-700">4,500</td>
+                                    <td class="px-4 py-3 text-gray-700">13,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 text-gray-700">Junior High School</td>
+                                    <td class="px-4 py-3 text-gray-700">5,200</td>
+                                    <td class="px-4 py-3 text-gray-700">15,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-gray-700 text-sm mb-2"><span class="font-semibold">Note:</span> Fees include tuition, books, and basic supplies. Additional costs may apply for uniforms, transportation, and extracurricular activities.</p>
+                        <p class="text-gray-700 text-sm">Payment plans available. 5% discount for full annual payment.</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="fee.html">
+                            <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
+                                View Complete Fee Structure
+                                <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Download Script -->
+    <script>
+        function downloadForm() {
+            // Replace 'assets/documents/form.pdf' with your actual file path when available
+            var formUrl = 'assets/documents/form.pdf';
+            
+            var link = document.createElement('a');
+            link.href = formUrl;
+            link.download = 'Golden_Child_Application_Form.pdf';
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 </html>
