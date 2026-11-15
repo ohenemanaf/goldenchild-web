@@ -1,0 +1,53 @@
+<!-- title: Contact Us | description: Contact Golden Child Complex School: email, postal address, office hours and our four campuses. -->
+        <section class="page-hero">
+            <span class="floaty floaty--1">{{icon:mail}}</span>
+            <span class="floaty floaty--2">{{icon:bell}}</span>
+            <span class="floaty floaty--3">{{icon:map-pin}}</span>
+            <div class="container">
+                <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Reach out with any questions about our programs.</p>
+            </div>
+            {{wave}}
+        </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="split split--even">
+                    <div class="card" data-reveal="left">
+                        <h2 class="block-title">Send a message</h2>
+                        <form data-kind="message" action="mailto:goldenschool@yahoo.com" method="post" enctype="text/plain">
+                            <div class="row row--2">
+                                <div><label for="name">Full Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+                                <div><label for="email">Email Address</label><input type="email" id="email" name="email" autocomplete="email"></div>
+                            </div>
+                            <div class="row"><div><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel"></div></div>
+                            <div class="row"><div><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div></div>
+                            <div class="row"><div><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div></div>
+                            <button type="submit" class="btn btn--primary" style="width:100%">{{icon:send}}Send Message</button>
+                            <p class="form-hint">This opens your email app with your message ready to send to goldenschool@yahoo.com.</p>
+                        </form>
+                    </div>
+                    <div class="card" data-reveal="right">
+                        <h2 class="block-title">School Information</h2>
+                        <div class="info">
+                            <div><span class="badge">{{icon:map-pin}}</span><div><p class="label">Address</p><strong>Post Office Box 23, Asamankese</strong><p>Asamankese, Ghana</p></div></div>
+                            <div><span class="badge tone-gold">{{icon:clock}}</span><div><p class="label">Office Hours</p><p>Monday - Friday: 7:00 AM - 5:00 PM</p></div></div>
+                            <div><span class="badge tone-plum">{{icon:mail}}</span><div><p class="label">Email &amp; Box</p><p><a href="mailto:goldenschool@yahoo.com">goldenschool@yahoo.com</a></p><p>Post Office Box 166</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cream">
+            <div class="container">
+                <div class="section__head" data-reveal><h2>Our Campuses</h2><p>Ask about any campus by email.</p></div>
+                <div class="grid grid--4">
+                    <a class="card campus" data-reveal href="mailto:goldenschool@yahoo.com?subject=Enquiry%3A%20James%20Town%20campus" style="text-decoration:none;color:inherit"><div class="campus__pin"><span class="badge badge--sm">{{icon:map-pin}}</span><h3>JAMES TOWN</h3></div><p>Creche to Primary 3</p></a>
+                    <a class="card campus" data-reveal href="mailto:goldenschool@yahoo.com?subject=Enquiry%3A%20First%20Stop%20campus" style="text-decoration:none;color:inherit"><div class="campus__pin"><span class="badge badge--sm">{{icon:map-pin}}</span><h3>FIRST STOP</h3></div><p>Creche to JHS 3</p></a>
+                    <a class="card campus" data-reveal href="mailto:goldenschool@yahoo.com?subject=Enquiry%3A%20Abaase%20campus" style="text-decoration:none;color:inherit"><div class="campus__pin"><span class="badge badge--sm">{{icon:map-pin}}</span><h3>ABAASE</h3></div><p>Creche to Primary 3</p></a>
+                    <a class="card campus" data-reveal href="mailto:goldenschool@yahoo.com?subject=Enquiry%3A%20Kasoa-Ofankor%20campus" style="text-decoration:none;color:inherit"><div class="campus__pin"><span class="badge badge--sm">{{icon:map-pin}}</span><h3>KASOA-OFANKOR</h3></div><p>Creche to Primary 3</p></a>
+                </div>
+            </div>
+        </section>
