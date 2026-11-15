@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#0f766e">
     <link rel="icon" type="image/jpeg" href="assets/images/crest-192.jpg">
     <link rel="stylesheet" href="assets/css/site.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
     <div class="topbar">
@@ -52,10 +53,10 @@
         <section class="section section--light" style="padding-top:48px">
             <div class="container" style="max-width:860px">
                 <a class="back" href="index.html">Back to home</a>
-                <div class="section__head">
+                <div class="section__head" data-reveal>
                     <h1 style="font-size:clamp(28px,4vw,36px)">Fee Structure (2024-2025)</h1>
                 </div>
-                <div class="card">
+                <div class="card" data-reveal>
                     <div style="overflow-x:auto">
                         <table class="fees">
                             <thead><tr><th scope="col">Level</th><th scope="col">Term Fee (GHS)</th><th scope="col">Annual Fee (GHS)</th></tr></thead>
@@ -106,6 +107,8 @@
             <p class="copyright">&copy; <span id="year">2026</span> Golden Child Complex School. All rights reserved.</p>
         </div>
     </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up"/></svg></button>
 
     <script src="assets/js/site.js" defer></script>
 </body>

@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#0f766e">
     <link rel="icon" type="image/jpeg" href="assets/images/crest-192.jpg">
     <link rel="stylesheet" href="assets/css/site.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
     <div class="topbar">
@@ -52,18 +53,18 @@
         <section class="section section--light" style="padding-top:48px">
             <div class="container">
                 <a class="back" href="index.html">Back to home</a>
-                <div class="section__head">
+                <div class="section__head" data-reveal>
                     <h1 style="font-size:clamp(28px,4vw,36px)">Admission Process</h1>
                     <p>Join our community of learners with a simple application process.</p>
                 </div>
-                <ol class="grid grid--4 steps" style="list-style:none;padding:0;margin-top:0">
-                    <li class="card step"><span class="step__num">1</span><h3>Application</h3><p>Complete and submit the application form online or in person at our administrative office.</p></li>
-                    <li class="card step"><span class="step__num">2</span><h3>Assessment</h3><p>Schedule an assessment test and interview to determine the appropriate grade level placement.</p></li>
-                    <li class="card step"><span class="step__num">3</span><h3>Acceptance</h3><p>Receive admission decision within two weeks of completing the assessment process.</p></li>
-                    <li class="card step"><span class="step__num">4</span><h3>Enrollment</h3><p>Complete registration by paying fees and submitting required documents to secure your child's place.</p></li>
+                <ol class="grid grid--4 steps" data-reveal-line style="list-style:none;padding:0;margin-top:0">
+                    <li class="card step" data-reveal><span class="step__num">1</span><h3>Application</h3><p>Complete and submit the application form online or in person at our administrative office.</p></li>
+                    <li class="card step" data-reveal><span class="step__num">2</span><h3>Assessment</h3><p>Schedule an assessment test and interview to determine the appropriate grade level placement.</p></li>
+                    <li class="card step" data-reveal><span class="step__num">3</span><h3>Acceptance</h3><p>Receive admission decision within two weeks of completing the assessment process.</p></li>
+                    <li class="card step" data-reveal><span class="step__num">4</span><h3>Enrollment</h3><p>Complete registration by paying fees and submitting required documents to secure your child's place.</p></li>
                 </ol>
                 <div class="grid grid--2">
-                    <div class="card card--mint">
+                    <div class="card card--mint" data-reveal>
                         <h3 class="block-title" style="text-align:left">Required Documents</h3>
                         <ul class="checklist">
                             <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Completed application form</li>
@@ -76,7 +77,7 @@
                         <a class="btn btn--primary" href="mailto:goldenschool@yahoo.com?subject=Application%20form%20request"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Request an Application Form</a>
                         <p class="note">Forms are also available at our administrative office.</p>
                     </div>
-                    <div class="card card--mint">
+                    <div class="card card--mint" data-reveal>
                         <h3 class="block-title" style="text-align:left">Fee Structure (2024-2025)</h3>
                         <div style="overflow-x:auto">
                             <table class="fees">
@@ -125,6 +126,8 @@
             <p class="copyright">&copy; <span id="year">2026</span> Golden Child Complex School. All rights reserved.</p>
         </div>
     </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up"/></svg></button>
 
     <script src="assets/js/site.js" defer></script>
 </body>
