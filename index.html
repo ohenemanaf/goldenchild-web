@@ -3,776 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOLDEN CHILD COMPLEX SCHOOL</title>
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { primary: '#15B8A6', secondary: '#0F766E' },
-                    borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/jpeg" href="assets/images/crest.jpg">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/button.css">
+    <title>Golden Child Complex School | Creche to Junior High School</title>
+    <meta name="description" content="Golden Child Complex School: Creche, Kindergarten, Primary and Junior High School across four campuses, nurturing excellence since 1999.">
+    <meta name="theme-color" content="#0f766e">
+    <link rel="icon" type="image/jpeg" href="assets/images/crest-192.jpg">
+    <link rel="preload" href="assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body class="bg-[#fff8e6]">
-    <!-- Header Section -->
-    <header class="fixed w-full bg-[#fffbf0] bg-opacity-95 shadow-md z-50">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="flex justify-between items-center py-2 border-b border-gray-100">
-                <div class="text-sm text-gray-600 flex flex-wrap">
-                    <span class="flex items-center mr-4 inline-block">
-                        <div class="w-4 h-4 flex items-center justify-center mr-1">
-                            <i class="ri-phone-line text-primary"></i>
-                        </div>
-                        +233 302 123 4567
-                    </span>
-                    <span class="flex items-center inline-block">
-                        <div class="w-4 h-4 flex items-center justify-center mr-1">
-                            <i class="ri-mail-line text-primary"></i>
-                        </div>
-                        goldenschool@yahoo.com
-                    </span>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="https://web.facebook.com/">
-                        <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition-colors">
-                            <i class="ri-facebook-fill"></i>
-                        </div>
-                    </a>
-                    <a href="https://web.facebook.com/">
-                        <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition-colors">
-                            <i class="ri-twitter-fill"></i>
-                        </div>
-                    </a>
-                    <a href="https://web.facebook.com/">
-                        <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary hover:text-white transition-colors">
-                            <i class="ri-instagram-line"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="flex justify-between items-center py-4">
-                <a href="#" class="flex items-center">
-                    <img src="assets/images/crest.jpg" alt="Golden Logo" class="h-16 w-auto">
-                    <div class="ml-3">
-                        <h1 class="text-2xl md:text-3xl font-bold text-gray-800">GOLDEN CHILD SCHOOL COMPLEX</h1>
-                        <p class="text-lg md:text-xl text-green-600 font-semibold">POST OFFICE BOX 166</p>
-                    </div>
-                </a>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors border-b-2 border-primary">Home</a>
-                    <a href="#about" class="text-gray-800 font-medium hover:text-primary transition-colors">About</a>
-                    <a href="#academics" class="text-gray-800 font-medium hover:text-primary transition-colors">Academics</a>
-                    <a href="#admissions" class="text-gray-800 font-medium hover:text-primary transition-colors">Admissions</a>
-                    <a href="#news" class="text-gray-800 font-medium hover:text-primary transition-colors">News & Events</a>
-                    <a href="#contact" class="text-gray-800 font-medium hover:text-primary transition-colors">Contact</a>
-                </nav>
-                <button class="md:hidden w-10 h-10 flex items-center justify-center">
-                    <i class="ri-menu-line text-2xl"></i>
-                </button>
-            </div>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <a href="mailto:goldenschool@yahoo.com"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>goldenschool@yahoo.com</a>
+            <span>Post Office Box 166</span>
         </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#top" class="brand">
+                <img src="assets/images/crest-192.jpg" alt="Golden Child Complex School crest" width="56" height="56">
+                <span>
+                    <strong>GOLDEN CHILD SCHOOL COMPLEX</strong>
+                    <span>POST OFFICE BOX 166</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Main">
+                <a href="#top" aria-current="page">Home</a>
+                <a href="#about">About</a>
+                <a href="#academics">Academics</a>
+                <a href="#admissions">Admissions</a>
+                <a href="#news">News &amp; Events</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#menu"/></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Main">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#news">News &amp; Events</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section relative pt-40 pb-28">
-        <div class="hero-overlay absolute inset-0"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="flex flex-col md:flex-row items-center w-full">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Nurturing Excellence, Building Futures</h1>
-                    <p class="text-lg text-gray-700 mb-8">At Golden Child Complex School, we provide a nurturing environment where children from Creche to Junior High School discover their potential and develop into confident, well-rounded individuals.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="admission.html">
-                            <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center">
-                                <div class="w-5 h-5 flex items-center justify-center mr-2">
-                                    <i class="ri-user-add-line"></i>
-                                </div>
-                                Admission Enquiry
-                            </button>
-                        </a>
-                        <a href="assets/videos/Screen recording 2025-04-22 7.13.11 PM.webm">
-                            <button class="bg-white text-gray-800 border border-gray-300 px-6 py-3 font-medium !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap flex items-center">
-                                <div class="w-5 h-5 flex items-center justify-center mr-2">
-                                    <i class="ri-play-circle-line"></i>
-                                </div>
-                                Virtual Tour
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white p-6 rounded shadow-lg text-center">
-                            <div class="w-12 h-12 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-award-line text-2xl"></i>
-                            </div>
-                            <h3 class="text-3xl font-bold text-gray-800 mb-1">25+</h3>
-                            <p class="text-gray-600">Years of Excellence</p>
-                        </div>
-                        <div class="bg-white p-6 rounded shadow-lg text-center">
-                            <div class="w-12 h-12 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-user-smile-line text-2xl"></i>
-                            </div>
-                            <h3 class="text-3xl font-bold text-gray-800 mb-1">1200+</h3>
-                            <p class="text-gray-600">Happy Students</p>
-                        </div>
-                        <div class="bg-white p-6 rounded shadow-lg text-center">
-                            <div class="w-12 h-12 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-user-star-line text-2xl"></i>
-                            </div>
-                            <h3 class="text-3xl font-bold text-gray-800 mb-1">80+</h3>
-                            <p class="text-gray-600">Qualified Teachers</p>
-                        </div>
-                        <div class="bg-white p-6 rounded shadow-lg text-center">
-                            <div class="w-12 h-12 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-graduation-cap-line text-2xl"></i>
-                            </div>
-                            <h3 class="text-3xl font-bold text-gray-800 mb-1">98%</h3>
-                            <p class="text-gray-600">Success Rate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-[#fff8e6]">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">About Our School</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
-            <div class="flex flex-col md:flex-row items-center gap-10">
-                <div class="md:w-1/2">
-                    <video src="assets/videos/cat.mp4" loop autoplay muted class="rounded-lg shadow-lg w-full h-auto object-cover"></video>
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Welcome to Golden Child Complex School</h3>
-                    <p class="text-gray-700 mb-6">Established in 1999, Golden Child Complex School has been a beacon of educational excellence in Ghana. We offer comprehensive education from Creche to Junior High School, focusing on academic excellence, character development, and nurturing each child's unique talents.</p>
-                    <div class="mb-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Our Mission</h4>
-                        <p class="text-gray-700">To provide a stimulating learning environment that encourages students to realize their full potential, develop critical thinking skills, and become responsible global citizens.</p>
-                    </div>
-                    <div class="mb-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Our Vision</h4>
-                        <p class="text-gray-700">To be the leading educational institution that produces well-rounded, innovative, and ethical leaders who positively impact society.</p>
-                    </div>
-                    <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Learn More About Us</button>
-                </div>
-            </div>
-            <br>
-            <hr>
-            <div class="mt-16">
-                <h3 class="text-2xl font-semibold text-gray-800 text-center mb-8">Our Core Values</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary bg-opacity-10 rounded-full text-primary">
-                            <i class="ri-book-open-line text-3xl"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Excellence</h4>
-                        <p class="text-gray-600 text-sm">Striving for the highest standards in all endeavors</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary bg-opacity-10 rounded-full text-primary">
-                            <i class="ri-heart-line text-3xl"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Integrity</h4>
-                        <p class="text-gray-600 text-sm">Upholding honesty, ethics, and moral principles</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary bg-opacity-10 rounded-full text-primary">
-                            <i class="ri-team-line text-3xl"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Respect</h4>
-                        <p class="text-gray-600 text-sm">Valuing diversity and treating everyone with dignity</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary bg-opacity-10 rounded-full text-primary">
-                            <i class="ri-lightbulb-line text-3xl"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Innovation</h4>
-                        <p class="text-gray-600 text-sm">Embracing creativity and forward-thinking approaches</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- Academic Programs -->
-    <section id="academics" class="py-20 bg-[#fffbf0]">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Academic Programs</h2>
-                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
-                <p class="text-gray-700 max-w-2xl mx-auto">Our comprehensive educational programs are designed to nurture students at every stage of their development journey.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=happy%2520toddlers%2520playing%2520in%2520colorful%2520creche%2520classroom%2520with%2520toys%2C%2520caring%2520teachers%2C%2520educational%2520environment%2C%2520bright%2520colors%2C%2520safe%2520space%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=3&orientation=landscape" alt="Creche Program" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-baby-line"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold text-gray-800">Creche</h3>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-3">Ages: 6 months - 2 years</p>
-                        <p class="text-gray-700 mb-4">A nurturing environment where infants and toddlers receive personalized care while developing essential early skills through play-based learning.</p>
-                        <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
-                            Learn More
-                            <div class="w-5 h-5 flex items-center justify-center ml-1">
-                                <i class="ri-arrow-right-line"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=kindergarten%2520children%2520in%2520uniform%2520learning%2520through%2520play%2C%2520colorful%2520classroom%2C%2520educational%2520toys%2C%2520teacher%2520guiding%2520activities%2C%2520bright%2520learning%2520environment%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=4&orientation=landscape" alt="Kindergarten Program" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-seedling-line"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold text-gray-800">Kindergarten</h3>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-3">Ages: 3 - 5 years</p>
-                        <p class="text-gray-700 mb-4">A vibrant learning environment where children develop social skills, creativity, and foundational academic concepts through guided play and exploration.</p>
-                        <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
-                            Learn More
-                            <div class="w-5 h-5 flex items-center justify-center ml-1">
-                                <i class="ri-arrow-right-line"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=primary%2520school%2520students%2520in%2520uniform%2520engaged%2520in%2520classroom%2520learning%2C%2520teacher%2520at%2520blackboard%2C%2520bright%2520classroom%2C%2520educational%2520charts%2520on%2520walls%2C%2520students%2520raising%2520hands%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=5&orientation=landscape" alt="Primary School Program" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-book-read-line"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold text-gray-800">Primary School</h3>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-3">Ages: 6 - 11 years</p>
-                        <p class="text-gray-700 mb-4">A comprehensive curriculum that builds strong academic foundations in literacy, numeracy, science, and social studies while fostering critical thinking skills.</p>
-                        <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
-                            Learn More
-                            <div class="w-5 h-5 flex items-center justify-center ml-1">
-                                <i class="ri-arrow-right-line"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=junior%2520high%2520school%2520students%2520in%2520uniform%2520in%2520science%2520laboratory%2C%2520conducting%2520experiments%2C%2520teacher%2520supervising%2C%2520modern%2520lab%2520equipment%2C%2520educational%2520environment%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=6&orientation=landscape" alt="Junior High School Program" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-graduation-cap-line"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold text-gray-800">Junior High School</h3>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-3">Ages: 12 - 14 years</p>
-                        <p class="text-gray-700 mb-4">An advanced curriculum preparing students for higher education with specialized subjects, research projects, and leadership opportunities.</p>
-                        <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
-                            Learn More
-                            <div class="w-5 h-5 flex items-center justify-center ml-1">
-                                <i class="ri-arrow-right-line"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- Campuses -->
-    <section class="py-20 bg-[#fff8e6]">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">School Campuses</h2>
-            <div class="w-20 h-1 bg-primary mx-auto mb-10"></div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="assets/images/1.jpg" alt="James Town Campus" class="w-full h-48 object-cover">
-                    <div class="p-6 text-left">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">JAMES TOWN</h3>
-                        <p class="text-gray-700 text-sm">JAMES TOWN CAMPUS is the storied metropolis of Golden Child School and is the First Campus of the School. It was established in 1999. It is from Creche to Primary 3.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="assets/images/2.jpg" alt="First Stop Campus" class="w-full h-48 object-cover">
-                    <div class="p-6 text-left">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">FIRST STOP</h3>
-                        <p class="text-gray-700 text-sm">FIRST STOP CAMPUS is the perpetual heartbeat of Golden Child School and is the Second Campus of the prestigious school. Reason being that, majority of the students reside there. It is from Creche to JHS 3.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="assets/images/3.jpg" alt="Abaase Campus" class="w-full h-48 object-cover">
-                    <div class="p-6 text-left">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">ABAASE</h3>
-                        <p class="text-gray-700 text-sm">ABAASE is the third campus built by Dr. EVANS (Proprietor Of the School) in the year 2008. It is also from Creche to Primary 3.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="assets/images/4.jpg" alt="Kasoa-Ofankor Campus" class="w-full h-48 object-cover">
-                    <div class="p-6 text-left">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">KASOA-OFANKOR</h3>
-                        <p class="text-gray-700 text-sm">This is the fourth campus for Golden Child School Complex, extending quality education further. It is also from Creche to Primary 3.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- School Achievements -->
-    <section class="py-20 bg-[#fffbf0]">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Achievements</h2>
-                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
-                <p class="text-gray-700 max-w-2xl mx-auto">We take pride in our accomplishments and the success of our students over the years.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Academic Excellence</h3>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="text-center">
-                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-medal-line text-3xl"></i>
-                            </div>
-                            <h4 class="text-3xl font-bold text-gray-800 mb-1">96%</h4>
-                            <p class="text-gray-600">BECE Pass Rate</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-trophy-line text-3xl"></i>
-                            </div>
-                            <h4 class="text-3xl font-bold text-gray-800 mb-1">45+</h4>
-                            <p class="text-gray-600">Academic Awards</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-government-line text-3xl"></i>
-                            </div>
-                            <h4 class="text-3xl font-bold text-gray-800 mb-1">12</h4>
-                            <p class="text-gray-600">National Competitions</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 flex items-center justify-center mx-auto mb-3 bg-primary bg-opacity-10 rounded-full text-primary">
-                                <i class="ri-user-star-line text-3xl"></i>
-                            </div>
-                            <h4 class="text-3xl font-bold text-gray-800 mb-1">850+</h4>
-                            <p class="text-gray-600">Alumni Success</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Recent Recognition</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3 mt-1 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0">
-                                <i class="ri-award-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">Best Primary School in Asamankese</h4>
-                                <p class="text-gray-600 text-sm">Ghana Education Service, 2024</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3 mt-1 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0">
-                                <i class="ri-award-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">National Science & Math Olympiad Champions</h4>
-                                <p class="text-gray-600 text-sm">Junior Category, 2023</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3 mt-1 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0">
-                                <i class="ri-award-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">Excellence in Early Childhood Education</h4>
-                                <p class="text-gray-600 text-sm">Ghana Education Awards, 2023</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3 mt-1 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0">
-                                <i class="ri-award-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800">Outstanding School Infrastructure</h4>
-                                <p class="text-gray-600 text-sm">Private Schools Association of Ghana, 2022</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Student Success Stories</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <img src="https://readdy.ai/api/search-image?query=african%2520teenage%2520girl%2520student%2520in%2520school%2520uniform%2520smiling%2520at%2520camera%2C%2520professional%2520headshot%2C%2520clean%2520background%2C%2520high%2520quality%2C%2520professional%2520photography&width=150&height=150&seq=7&orientation=squarish" alt="Gbadago Irene Fafali" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold text-gray-800">Gbadago Irene Fafali</h4>
-                        <p class="text-gray-600 text-sm mb-3">Class of 2021</p>
-                        <p class="text-gray-700 text-sm">"Golden Child gave me the foundation to excel academically. Now studying Computer Science at Kwame Nkrumah University of Science and Technology."</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://readdy.ai/api/search-image?query=african%2520teenage%2520boy%2520student%2520in%2520school%2520uniform%2520smiling%2520at%2520camera%2C%2520professional%2520headshot%2C%2520clean%2520background%2C%2520high%2520quality%2C%2520professional%2520photography&width=150&height=150&seq=8&orientation=squarish" alt="Manobah Samuel Ababio" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold text-gray-800">Manobah Samuel Ababio</h4>
-                        <p class="text-gray-600 text-sm mb-3">Class of 2021</p>
-                        <p class="text-gray-700 text-sm">"Golden Child Complex School taught me the importance of discipline and focus. Currently, I'm reading Information Technology at the Ghana Communication Technology University."</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://readdy.ai/api/search-image?query=african%2520teenage%2520boy%2520student%2520in%2520school%2520uniform%2520smiling%2520at%2520camera%2C%2520professional%2520headshot%2C%2520clean%2520background%2C%2520high%2520quality%2C%2520professional%2520photography&width=150&height=150&seq=9&orientation=squarish" alt="Abdul Manaf Ali" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold text-gray-800">Abdul Manaf Ali</h4>
-                        <p class="text-gray-600 text-sm mb-3">Class of 2021</p>
-                        <p class="text-gray-700 text-sm">"Golden Child Complex School dedicated teachers ignited my passion for learning. I'm now pursuing a degree in Computer Science at the Ghana Communication Technology University."</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://readdy.ai/api/search-image?query=african%2520teenage%2520boy%2520student%2520in%2520school%2520uniform%2520smiling%2520at%2520camera%2C%2520professional%2520headshot%2C%2520clean%2520background%2C%2520high%2520quality%2C%2520professional%2520photography&width=150&height=150&seq=10&orientation=squarish" alt="Abdul Aziz Muftao" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold text-gray-800">Abdul Aziz Muftao</h4>
-                        <p class="text-gray-600 text-sm mb-3">Class of 2021</p>
-                        <p class="text-gray-700 text-sm">"Golden Child Complex School instilled in me the values of perseverance and hard work. Currently, I'm thriving in Bachelor of Arts at the University of Ghana."</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://readdy.ai/api/search-image?query=african%2520teenage%2520boy%2520student%2520in%2520school%2520uniform%2520smiling%2520at%2520camera%2C%2520professional%2520headshot%2C%2520clean%2520background%2C%2520high%2520quality%2C%2520professional%2520photography&width=150&height=150&seq=11&orientation=squarish" alt="Awoonor Selase Kwame" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold text-gray-800">Awoonor Selase Kwame</h4>
-                        <p class="text-gray-600 text-sm mb-3">Class of 2021</p>
-                        <p class="text-gray-700 text-sm">"The Socialisation skills I developed at Golden Child helped me understand social life and I'm engaging case studies in Public Administration in University of Professional Studies, Accra."</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://readdy.ai/api/search-image?query=african%2520teenage%2520boy%2520student%2520in%2520school%2520uniform%2520smiling%2520at%2520camera%2C%2520professional%2520headshot%2C%2520clean%2520background%2C%2520high%2520quality%2C%2520professional%2520photography&width=150&height=150&seq=12&orientation=squarish" alt="Prince Mireku Frimpong" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold text-gray-800">Prince Mireku Frimpong</h4>
-                        <p class="text-gray-600 text-sm mb-3">Class of 2021</p>
-                        <p class="text-gray-700 text-sm">"Golden Child School Complex instilled both moral values and Academic Values to my life and I'm now in the University of Ghana pursuing Bachelor of Arts in Maths and Economics."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- Admission Process -->
-    <section id="admissions" class="py-20">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Admission Process</h2>
-                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
-                <p class="text-gray-700 max-w-2xl mx-auto">Join our community of learners with a simple application process.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">1</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Application</h3>
-                    <p class="text-gray-700">Complete and submit the application form online or in person at our administrative office.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">2</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Assessment</h3>
-                    <p class="text-gray-700">Schedule an assessment test and interview to determine the appropriate grade level placement.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">3</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Acceptance</h3>
-                    <p class="text-gray-700">Receive admission decision within two weeks of completing the assessment process.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center h-full">
-                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary text-white rounded-full font-bold text-xl">4</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Enrollment</h3>
-                    <p class="text-gray-700">Complete registration by paying fees and submitting required documents to secure your child's place.</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Required Documents</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary"><i class="ri-checkbox-circle-line"></i></div>
-                            <span class="text-gray-700">Completed application form</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary"><i class="ri-checkbox-circle-line"></i></div>
-                            <span class="text-gray-700">Birth certificate (original and photocopy)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary"><i class="ri-checkbox-circle-line"></i></div>
-                            <span class="text-gray-700">Immunization records</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary"><i class="ri-checkbox-circle-line"></i></div>
-                            <span class="text-gray-700">Recent passport-sized photographs (4)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary"><i class="ri-checkbox-circle-line"></i></div>
-                            <span class="text-gray-700">Previous school records (for transfers)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary"><i class="ri-checkbox-circle-line"></i></div>
-                            <span class="text-gray-700">Parent/guardian ID (original and photocopy)</span>
-                        </li>
-                    </ul>
-                    <div class="mt-8">
-                        <button onclick="downloadForm()" class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center">
-                            <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-download-line"></i></div>
-                            Download Application Form
-                        </button>
-                    </div>
-                </div>
-                <div class="bg-[#f7fef9] p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Fee Structure (2024-2025)</h3>
-                    <div class="overflow-x-auto">
-                        <table class="w-full">
-                            <thead>
-                                <tr class="bg-gray-50">
-                                    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Level</th>
-                                    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Term Fee (GHS)</th>
-                                    <th class="px-4 py-3 text-left text-gray-800 font-semibold">Annual Fee (GHS)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr>
-                                    <td class="px-4 py-3 text-gray-700">Creche</td>
-                                    <td class="px-4 py-3 text-gray-700">3,500</td>
-                                    <td class="px-4 py-3 text-gray-700">10,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-3 text-gray-700">Kindergarten</td>
-                                    <td class="px-4 py-3 text-gray-700">4,000</td>
-                                    <td class="px-4 py-3 text-gray-700">11,500</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-3 text-gray-700">Primary School</td>
-                                    <td class="px-4 py-3 text-gray-700">4,500</td>
-                                    <td class="px-4 py-3 text-gray-700">13,000</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-3 text-gray-700">Junior High School</td>
-                                    <td class="px-4 py-3 text-gray-700">5,200</td>
-                                    <td class="px-4 py-3 text-gray-700">15,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="mt-6">
-                        <p class="text-gray-700 text-sm mb-2"><span class="font-semibold">Note:</span> Fees include tuition, books, and basic supplies.</p>
-                    </div>
-                    <div class="mt-6">
-                        <a href="fee.html">
-                            <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:underline">
-                                View Complete Fee Structure
-                                <div class="w-5 h-5 flex items-center justify-center ml-1"><i class="ri-arrow-right-line"></i></div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- News & Events Section -->
-    <section id="news" class="py-20 bg-[#fff8e6]">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">News & Events</h2>
-                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
-                <p class="text-gray-700 max-w-2xl mx-auto">Stay updated with the latest happenings at Golden Child Complex School.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div class="bg-[#fffbf0] rounded-lg shadow-lg overflow-hidden">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=school%2520science%2520fair%2520with%2520students%2520presenting%2520projects%2C%2520colorful%2520displays%2C%2520teachers%2520and%2520parents%2520watching%2C%2520educational%2520environment%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=10&orientation=landscape" alt="Annual Science Fair" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-gray-500 text-sm mb-2"><div class="w-4 h-4 flex items-center justify-center mr-1"><i class="ri-calendar-line"></i></div>April 15, 2025</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Annual Science Fair Showcases Student Innovation</h3>
-                        <p class="text-gray-700 mb-4">Our students impressed judges with creative science projects addressing real-world problems at this year's Science Fair.</p>
-                    </div>
-                </div>
-                <div class="bg-[#fffbf0] rounded-lg shadow-lg overflow-hidden">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=school%2520sports%2520day%2520with%2520students%2520in%2520uniform%2520competing%2520in%2520track%2520events%2C%2520colorful%2520flags%2C%2520spectators%2520cheering%2C%2520sunny%2520day%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=11&orientation=landscape" alt="Inter-School Sports Competition" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-gray-500 text-sm mb-2"><div class="w-4 h-4 flex items-center justify-center mr-1"><i class="ri-calendar-line"></i></div>May 8, 2025</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Golden Child Wins Inter-School Sports Competition</h3>
-                        <p class="text-gray-700 mb-4">Our athletes brought home the championship trophy after dominating in track and field events at the regional competition.</p>
-                    </div>
-                </div>
-                <div class="bg-[#fffbf0] rounded-lg shadow-lg overflow-hidden">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=school%2520cultural%2520day%2520celebration%2520with%2520students%2520in%2520traditional%2520African%2520attire%2C%2520dancing%2C%2520colorful%2520decorations%2C%2520parents%2520watching%2C%2520professional%2520photography%2C%2520high%2520quality&width=400&height=300&seq=12&orientation=landscape" alt="Cultural Day Celebration" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-gray-500 text-sm mb-2"><div class="w-4 h-4 flex items-center justify-center mr-1"><i class="ri-calendar-line"></i></div>June 12, 2025</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Cultural Day Celebrates Diversity at Golden Child</h3>
-                        <p class="text-gray-700 mb-4">Students showcased Ghana's rich cultural heritage through traditional dances, attire, and cuisine at our annual Cultural Day.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 relative bg-[#fff8e6]">
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Contact Us</h2>
-                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
-                <p class="text-gray-700 max-w-2xl mx-auto">We'd love to hear from you. Reach out with any questions about our programs.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
                 <div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get In Touch</h3>
-                        <form>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                <div>
-                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Your name">
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Your email">
-                                </div>
+                    <h1>Nurturing Excellence, Building Futures</h1>
+                    <p class="lead">At Golden Child Complex School, we provide a nurturing environment where children from Creche to Junior High School discover their potential and develop into confident, well-rounded individuals.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="admission.html"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#user-plus"/></svg>Admission Enquiry</a>
+                        <a class="btn btn--outline" href="fee.html"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-text"/></svg>View Fees</a>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="card stat"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#award"/></svg></span><strong>25+</strong><span>Years of Excellence</span></div>
+                    <div class="card stat"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smile"/></svg></span><strong>1200+</strong><span>Happy Students</span></div>
+                    <div class="card stat"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#users"/></svg></span><strong>80+</strong><span>Qualified Teachers</span></div>
+                    <div class="card stat"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg></span><strong>98%</strong><span>Success Rate</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section section--cream">
+            <div class="container">
+                <div class="section__head"><h2>About Our School</h2></div>
+                <div class="about">
+                    <div class="facts">
+                        <div class="card"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#landmark"/></svg></span><div><strong>Established in 1999</strong><span>Starting at the James Town campus</span></div></div>
+                        <div class="card"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#building-2"/></svg></span><div><strong>Four campuses</strong><span>James Town, First Stop, Abaase and Kasoa-Ofankor</span></div></div>
+                        <div class="card"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#school"/></svg></span><div><strong>Creche to Junior High School</strong><span>Every stage of a child's basic education</span></div></div>
+                    </div>
+                    <div>
+                        <h3>Welcome to Golden Child Complex School</h3>
+                        <p>Established in 1999, Golden Child Complex School has been a beacon of educational excellence in Ghana. We offer comprehensive education from Creche to Junior High School, focusing on academic excellence, character development, and nurturing each child's unique talents.</p>
+                        <h4>Our Mission</h4>
+                        <p>To provide a stimulating learning environment that encourages students to realize their full potential, develop critical thinking skills, and become responsible global citizens.</p>
+                        <h4>Our Vision</h4>
+                        <p>To be the leading educational institution that produces well-rounded, innovative, and ethical leaders who positively impact society.</p>
+                    </div>
+                </div>
+
+                <div class="values">
+                    <h3>Our Core Values</h3>
+                    <div class="grid grid--4">
+                        <div class="card value"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book-open"/></svg></span><h4>Excellence</h4><p>Striving for the highest standards in all endeavors</p></div>
+                        <div class="card value"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#heart"/></svg></span><h4>Integrity</h4><p>Upholding honesty, ethics, and moral principles</p></div>
+                        <div class="card value"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#users"/></svg></span><h4>Respect</h4><p>Valuing diversity and treating everyone with dignity</p></div>
+                        <div class="card value"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lightbulb"/></svg></span><h4>Innovation</h4><p>Embracing creativity and forward-thinking approaches</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic programmes -->
+        <section id="academics" class="section section--light">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Academic Programs</h2>
+                    <p>Our comprehensive educational programs are designed to nurture students at every stage of their development journey.</p>
+                </div>
+                <div class="grid grid--4">
+                    <article class="card program">
+                        <div class="program__top"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#baby"/></svg></span><div><h3>Creche</h3><p class="ages">Ages: 6 months - 2 years</p></div></div>
+                        <p>A nurturing environment where infants and toddlers receive personalized care while developing essential early skills through play-based learning.</p>
+                    </article>
+                    <article class="card program">
+                        <div class="program__top"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sprout"/></svg></span><div><h3>Kindergarten</h3><p class="ages">Ages: 3 - 5 years</p></div></div>
+                        <p>A vibrant learning environment where children develop social skills, creativity, and foundational academic concepts through guided play and exploration.</p>
+                    </article>
+                    <article class="card program">
+                        <div class="program__top"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book-open-text"/></svg></span><div><h3>Primary School</h3><p class="ages">Ages: 6 - 11 years</p></div></div>
+                        <p>A comprehensive curriculum that builds strong academic foundations in literacy, numeracy, science, and social studies while fostering critical thinking skills.</p>
+                    </article>
+                    <article class="card program">
+                        <div class="program__top"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg></span><div><h3>Junior High School</h3><p class="ages">Ages: 12 - 14 years</p></div></div>
+                        <p>An advanced curriculum preparing students for higher education with specialized subjects, research projects, and leadership opportunities.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campuses -->
+        <section class="section section--cream">
+            <div class="container">
+                <div class="section__head"><h2>School Campuses</h2></div>
+                <div class="grid grid--4">
+                    <article class="card campus">
+                        <div class="campus__pin"><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map-pin"/></svg></span><h3>JAMES TOWN</h3></div>
+                        <p>JAMES TOWN CAMPUS is the storied metropolis of Golden Child School and is the First Campus of the School. It was established in 1999.</p>
+                        <span class="levels">Creche to Primary 3</span>
+                    </article>
+                    <article class="card campus">
+                        <div class="campus__pin"><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map-pin"/></svg></span><h3>FIRST STOP</h3></div>
+                        <p>FIRST STOP CAMPUS is the perpetual heartbeat of Golden Child School and is the Second Campus of the prestigious school. Reason being that, majority of the students reside there.</p>
+                        <span class="levels">Creche to JHS 3</span>
+                    </article>
+                    <article class="card campus">
+                        <div class="campus__pin"><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map-pin"/></svg></span><h3>ABAASE</h3></div>
+                        <p>ABAASE is the third campus built by Dr. EVANS (Proprietor Of the School) in the year 2008.</p>
+                        <span class="levels">Creche to Primary 3</span>
+                    </article>
+                    <article class="card campus">
+                        <div class="campus__pin"><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map-pin"/></svg></span><h3>KASOA-OFANKOR</h3></div>
+                        <p>This is the fourth campus for Golden Child School Complex, extending quality education further.</p>
+                        <span class="levels">Creche to Primary 3</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="section section--light">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Our Achievements</h2>
+                    <p>We take pride in our accomplishments and the success of our students over the years.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div class="card card--mint">
+                        <h3 class="block-title">Academic Excellence</h3>
+                        <div class="figures">
+                            <div class="figure"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#medal"/></svg></span><strong>96%</strong><span>BECE Pass Rate</span></div>
+                            <div class="figure"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#trophy"/></svg></span><strong>45+</strong><span>Academic Awards</span></div>
+                            <div class="figure"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#landmark"/></svg></span><strong>12</strong><span>National Competitions</span></div>
+                            <div class="figure"><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#star"/></svg></span><strong>850+</strong><span>Alumni Success</span></div>
+                        </div>
+                    </div>
+                    <div class="card card--mint">
+                        <h3 class="block-title">Recent Recognition</h3>
+                        <ul class="recognition">
+                            <li><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#award"/></svg></span><div><strong>Best Primary School in Asamankese</strong><span>Ghana Education Service, 2024</span></div></li>
+                            <li><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#award"/></svg></span><div><strong>National Science &amp; Math Olympiad Champions</strong><span>Junior Category, 2023</span></div></li>
+                            <li><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#award"/></svg></span><div><strong>Excellence in Early Childhood Education</strong><span>Ghana Education Awards, 2023</span></div></li>
+                            <li><span class="badge badge--sm"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#award"/></svg></span><div><strong>Outstanding School Infrastructure</strong><span>Private Schools Association of Ghana, 2022</span></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card--mint stories">
+                    <h3 class="block-title">Student Success Stories</h3>
+                    <div class="grid grid--3">
+                        <figure class="story"><span class="monogram" aria-hidden="true">GI</span><h4>Gbadago Irene Fafali</h4><p class="year">Class of 2021</p><blockquote>"Golden Child gave me the foundation to excel academically. Now studying Computer Science at Kwame Nkrumah University of Science and Technology."</blockquote></figure>
+                        <figure class="story"><span class="monogram" aria-hidden="true">MS</span><h4>Manobah Samuel Ababio</h4><p class="year">Class of 2021</p><blockquote>"Golden Child Complex School taught me the importance of discipline and focus. Currently, I'm reading Information Technology at the Ghana Communication Technology University."</blockquote></figure>
+                        <figure class="story"><span class="monogram" aria-hidden="true">AM</span><h4>Abdul Manaf Ali</h4><p class="year">Class of 2021</p><blockquote>"Golden Child Complex School dedicated teachers ignited my passion for learning. I'm now pursuing a degree in Computer Science at the Ghana Communication Technology University."</blockquote></figure>
+                        <figure class="story"><span class="monogram" aria-hidden="true">AA</span><h4>Abdul Aziz Muftao</h4><p class="year">Class of 2021</p><blockquote>"Golden Child Complex School instilled in me the values of perseverance and hard work. Currently, I'm thriving in Bachelor of Arts at the University of Ghana."</blockquote></figure>
+                        <figure class="story"><span class="monogram" aria-hidden="true">AS</span><h4>Awoonor Selase Kwame</h4><p class="year">Class of 2021</p><blockquote>"The Socialisation skills I developed at Golden Child helped me understand social life and I'm engaging case studies in Public Administration in University of Professional Studies, Accra."</blockquote></figure>
+                        <figure class="story"><span class="monogram" aria-hidden="true">PM</span><h4>Prince Mireku Frimpong</h4><p class="year">Class of 2021</p><blockquote>"Golden Child School Complex instilled both moral values and Academic Values to my life and I'm now in the University of Ghana pursuing Bachelor of Arts in Maths and Economics."</blockquote></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions -->
+        <section id="admissions" class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Admission Process</h2>
+                    <p>Join our community of learners with a simple application process.</p>
+                </div>
+                <ol class="grid grid--4 steps" style="list-style:none;padding:0;margin-top:0">
+                    <li class="card step"><span class="step__num">1</span><h3>Application</h3><p>Complete and submit the application form online or in person at our administrative office.</p></li>
+                    <li class="card step"><span class="step__num">2</span><h3>Assessment</h3><p>Schedule an assessment test and interview to determine the appropriate grade level placement.</p></li>
+                    <li class="card step"><span class="step__num">3</span><h3>Acceptance</h3><p>Receive admission decision within two weeks of completing the assessment process.</p></li>
+                    <li class="card step"><span class="step__num">4</span><h3>Enrollment</h3><p>Complete registration by paying fees and submitting required documents to secure your child's place.</p></li>
+                </ol>
+                <div class="grid grid--2">
+                    <div class="card card--mint">
+                        <h3 class="block-title" style="text-align:left">Required Documents</h3>
+                        <ul class="checklist">
+                            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Completed application form</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Birth certificate (original and photocopy)</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Immunization records</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Recent passport-sized photographs (4)</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Previous school records (for transfers)</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Parent/guardian ID (original and photocopy)</li>
+                        </ul>
+                        <a class="btn btn--primary" href="mailto:goldenschool@yahoo.com?subject=Application%20form%20request"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Request an Application Form</a>
+                        <p class="note">Forms are also available at our administrative office.</p>
+                    </div>
+                    <div class="card card--mint">
+                        <h3 class="block-title" style="text-align:left">Fee Structure (2024-2025)</h3>
+                        <div style="overflow-x:auto">
+                            <table class="fees">
+                                <thead><tr><th scope="col">Level</th><th scope="col">Term Fee (GHS)</th><th scope="col">Annual Fee (GHS)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Creche</td><td>3,500</td><td>10,000</td></tr>
+                                    <tr><td>Kindergarten</td><td>4,000</td><td>11,500</td></tr>
+                                    <tr><td>Primary School</td><td>4,500</td><td>13,000</td></tr>
+                                    <tr><td>Junior High School</td><td>5,200</td><td>15,000</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="note"><strong>Note:</strong> Fees include tuition, books, and basic supplies.</p>
+                        <a class="text-link" href="fee.html">View Complete Fee Structure</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & events -->
+        <section id="news" class="section section--cream">
+            <div class="container">
+                <div class="section__head">
+                    <h2>News &amp; Events</h2>
+                    <p>Stay updated with the latest happenings at Golden Child Complex School.</p>
+                </div>
+                <div class="grid grid--3">
+                    <article class="card news"><time datetime="2025-04-15"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>April 15, 2025</time><h3>Annual Science Fair Showcases Student Innovation</h3><p>Our students impressed judges with creative science projects addressing real-world problems at this year's Science Fair.</p></article>
+                    <article class="card news"><time datetime="2025-05-08"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>May 8, 2025</time><h3>Golden Child Wins Inter-School Sports Competition</h3><p>Our athletes brought home the championship trophy after dominating in track and field events at the regional competition.</p></article>
+                    <article class="card news"><time datetime="2025-06-12"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>June 12, 2025</time><h3>Cultural Day Celebrates Diversity at Golden Child</h3><p>Students showcased Ghana's rich cultural heritage through traditional dances, attire, and cuisine at our annual Cultural Day.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section--light">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you. Reach out with any questions about our programs.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3 class="block-title" style="text-align:left">Get In Touch</h3>
+                        <!-- Without a server, the form opens the visitor's email app with the message ready to send. -->
+                        <form id="contact-form" action="mailto:goldenschool@yahoo.com" method="post" enctype="text/plain">
+                            <div class="row row--2">
+                                <div><label for="name">Full Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+                                <div><label for="email">Email Address</label><input type="email" id="email" name="email" autocomplete="email"></div>
                             </div>
-                            <div class="mb-4">
-                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Your phone number">
-                            </div>
-                            <div class="mb-4">
-                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
-                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Message subject">
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block text-gray-700 mb-2">Message</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Your message"></textarea>
-                            </div>
-                            <button type="submit" class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap w-full">Send Message</button>
+                            <div class="row"><div><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel"></div></div>
+                            <div class="row"><div><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div></div>
+                            <div class="row"><div><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div></div>
+                            <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg>Send Message</button>
+                            <p class="form-hint">This opens your email app with your message ready to send to goldenschool@yahoo.com.</p>
                         </form>
                     </div>
-                </div>
-                <div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">School Information</h3>
-                        <div class="flex items-start mb-6">
-                            <div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0 mt-1"><i class="ri-map-pin-line text-xl"></i></div>
-                            <div>
-                                <p class="text-gray-600 text-sm">Address</p>
-                                <p class="text-gray-800 font-semibold">Post Office Box 23, Asamankese</p>
-                                <p class="text-gray-800">Asamankese, Ghana</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start mb-6">
-                            <div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0 mt-1"><i class="ri-time-line text-xl"></i></div>
-                            <div>
-                                <p class="text-gray-600 text-sm">Office Hours</p>
-                                <p class="text-gray-800">Monday - Friday: 7:00 AM - 5:00 PM</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full text-primary flex-shrink-0 mt-1"><i class="ri-mail-line text-xl"></i></div>
-                            <div>
-                                <p class="text-gray-600 text-sm">Email & Box</p>
-                                <p class="text-gray-800">goldenschool@yahoo.com</p>
-                                <p class="text-gray-800">Post Office Box 166</p>
-                            </div>
+                    <div class="card">
+                        <h3 class="block-title" style="text-align:left">School Information</h3>
+                        <div class="info">
+                            <div><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map-pin"/></svg></span><div><p class="label">Address</p><strong>Post Office Box 23, Asamankese</strong><p>Asamankese, Ghana</p></div></div>
+                            <div><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#clock"/></svg></span><div><p class="label">Office Hours</p><p>Monday - Friday: 7:00 AM - 5:00 PM</p></div></div>
+                            <div><span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg></span><div><p class="label">Email &amp; Box</p><p><a href="mailto:goldenschool@yahoo.com">goldenschool@yahoo.com</a></p><p>Post Office Box 166</p></div></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white pt-16 pb-8">
-        <div class="container mx-auto px-4 relative z-10 text-center md:text-left">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+    <footer class="site-footer">
+        <div class="container">
+            <div class="grid">
                 <div>
-                    <a href="#" class="flex items-center justify-center md:justify-start mb-6">
-                        <img src="assets/images/crest.jpg" alt="Logo" class="h-14 w-auto">
-                        <div class="ml-3 text-left">
-                            <h3 class="text-xl font-bold text-white">GOLDEN CHILD</h3>
-                            <p class="text-xs text-gray-400">COMPLEX SCHOOL</p>
-                        </div>
-                    </a>
-                    <p class="text-gray-400 mb-6">Nurturing excellence, building futures since 1999.</p>
+                    <div class="footer-brand"><img src="assets/images/crest-192.jpg" alt="" width="52" height="52"><div><strong>GOLDEN CHILD</strong><span>COMPLEX SCHOOL</span></div></div>
+                    <p>Nurturing excellence, building futures since 1999.</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#academics" class="text-gray-400 hover:text-white transition-colors">Academic Programs</a></li>
-                        <li><a href="#admissions" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#academics">Academic Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-6">Programs</h3>
-                    <ul class="space-y-3">
-                        <li><span class="text-gray-400">Creche Program</span></li>
-                        <li><span class="text-gray-400">Kindergarten</span></li>
-                        <li><span class="text-gray-400">Primary School</span></li>
-                        <li><span class="text-gray-400">Junior High School</span></li>
-                    </ul>
+                    <h3>Programs</h3>
+                    <ul><li>Creche Program</li><li>Kindergarten</li><li>Primary School</li><li>Junior High School</li></ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-6">Contact</h3>
-                    <p class="text-gray-400 mb-2">+233 302 123 4567</p>
-                    <p class="text-gray-400">goldenschool@yahoo.com</p>
+                    <h3>Contact</h3>
+                    <ul><li><a href="mailto:goldenschool@yahoo.com">goldenschool@yahoo.com</a></li><li>Post Office Box 166</li></ul>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2026 Golden Child Complex School. All rights reserved.</p>
-            </div>
+            <p class="copyright">&copy; <span id="year">2026</span> Golden Child Complex School. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/script.js"></script>
-    <script>
-        function downloadForm() {
-            var formUrl = 'admission.html';
-            var link = document.createElement('a');
-            link.href = formUrl;
-            link.download = 'application_form.html';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
+    <script src="assets/js/site.js" defer></script>
 </body>
 </html>

@@ -3,82 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fee Structure - Golden Child Complex School</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/button.css">
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { primary: '#15B8A6', secondary: '#0F766E' },
-                    borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' }
-                }
-            }
-        }
-    </script>
+    <title>Fee Structure 2024-2025 | Golden Child Complex School</title>
+    <meta name="description" content="School fees at Golden Child Complex School for Creche, Kindergarten, Primary and Junior High School, 2024-2025.">
+    <meta name="theme-color" content="#0f766e">
+    <link rel="icon" type="image/jpeg" href="assets/images/crest-192.jpg">
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body class="bg-[#fff8e6]">
-    <section class="py-20 bg-[#fffbf0]">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-[lightblue] p-8 md:p-20 rounded-2xl shadow-2xl">
-                <div class="text-center mb-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Fee Structure (2024-2025)</h3>
-                </div>
-                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
-                
-                <div class="overflow-x-auto bg-white rounded-lg shadow-md p-4">
-                    <table class="w-full">
-                        <thead>
-                            <tr class="bg-gray-50 border-b">
-                                <th class="px-4 py-3 text-left text-gray-800 font-semibold">Level</th>
-                                <th class="px-4 py-3 text-left text-gray-800 font-semibold">Term Fee (GHS)</th>
-                                <th class="px-4 py-3 text-left text-gray-800 font-semibold">Annual Fee (GHS)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-100">
-                            <tr>
-                                <td class="px-4 py-3 text-gray-700">Creche</td>
-                                <td class="px-4 py-3 text-gray-700">3,500</td>
-                                <td class="px-4 py-3 text-gray-700">10,000</td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-3 text-gray-700">Kindergarten</td>
-                                <td class="px-4 py-3 text-gray-700">4,000</td>
-                                <td class="px-4 py-3 text-gray-700">11,500</td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-3 text-gray-700">Primary School</td>
-                                <td class="px-4 py-3 text-gray-700">4,500</td>
-                                <td class="px-4 py-3 text-gray-700">13,000</td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-3 text-gray-700">Junior High School</td>
-                                <td class="px-4 py-3 text-gray-700">5,200</td>
-                                <td class="px-4 py-3 text-gray-700">15,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <a href="mailto:goldenschool@yahoo.com"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>goldenschool@yahoo.com</a>
+            <span>Post Office Box 166</span>
+        </div>
+    </div>
 
-                <div class="mt-6 text-gray-700">
-                    <p class="text-sm mb-2"><span class="font-semibold">Note:</span> Fees include tuition, books, and basic supplies. Additional costs may apply for uniforms, transportation, and extracurricular activities.</p>
-                    <p class="text-sm mb-6">Payment plans available. 5% discount for full annual payment.</p>
-                    
-                    <div class="text-center mt-8">
-                        <a href="index.html" class="inline-block">
-                            <button class="button">
-                                <div class="button-outer">
-                                    <div class="button-inner">
-                                        <span>GO BACK TO HOME</span>
-                                    </div>
-                                </div>
-                            </button>
-                        </a> 
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="assets/images/crest-192.jpg" alt="Golden Child Complex School crest" width="56" height="56">
+                <span>
+                    <strong>GOLDEN CHILD SCHOOL COMPLEX</strong>
+                    <span>POST OFFICE BOX 166</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#academics">Academics</a>
+                <a href="index.html#admissions">Admissions</a>
+                <a href="index.html#news">News &amp; Events</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#menu"/></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#academics">Academics</a>
+            <a href="index.html#admissions">Admissions</a>
+            <a href="index.html#news">News &amp; Events</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section section--light" style="padding-top:48px">
+            <div class="container" style="max-width:860px">
+                <a class="back" href="index.html">Back to home</a>
+                <div class="section__head">
+                    <h1 style="font-size:clamp(28px,4vw,36px)">Fee Structure (2024-2025)</h1>
+                </div>
+                <div class="card">
+                    <div style="overflow-x:auto">
+                        <table class="fees">
+                            <thead><tr><th scope="col">Level</th><th scope="col">Term Fee (GHS)</th><th scope="col">Annual Fee (GHS)</th></tr></thead>
+                            <tbody>
+                                <tr><td>Creche</td><td>3,500</td><td>10,000</td></tr>
+                                <tr><td>Kindergarten</td><td>4,000</td><td>11,500</td></tr>
+                                <tr><td>Primary School</td><td>4,500</td><td>13,000</td></tr>
+                                <tr><td>Junior High School</td><td>5,200</td><td>15,000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="note"><strong>Note:</strong> Fees include tuition, books, and basic supplies. Additional costs may apply for uniforms, transportation, and extracurricular activities.</p>
+                    <p class="note">Payment plans available. 5% discount for full annual payment.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px">
+                        <a class="btn btn--primary" href="admission.html">How to apply</a>
+                        <a class="btn btn--outline" href="mailto:goldenschool@yahoo.com?subject=School%20fees%20enquiry">Ask about fees</a>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <div class="footer-brand"><img src="assets/images/crest-192.jpg" alt="" width="52" height="52"><div><strong>GOLDEN CHILD</strong><span>COMPLEX SCHOOL</span></div></div>
+                    <p>Nurturing excellence, building futures since 1999.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#academics">Academic Programs</a></li>
+                        <li><a href="index.html#admissions">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Programs</h3>
+                    <ul><li>Creche Program</li><li>Kindergarten</li><li>Primary School</li><li>Junior High School</li></ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul><li><a href="mailto:goldenschool@yahoo.com">goldenschool@yahoo.com</a></li><li>Post Office Box 166</li></ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; <span id="year">2026</span> Golden Child Complex School. All rights reserved.</p>
         </div>
-    </section>
+    </footer>
+
+    <script src="assets/js/site.js" defer></script>
 </body>
 </html>
